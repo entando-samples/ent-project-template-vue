@@ -11,9 +11,10 @@ export default defineConfig({
             '@': fileURLToPath(new URL('./src', import.meta.url))
         }
     },
-    base: '/entando-de-app/cmsresources/ent-prj-tmpl-vue-bundle',
+    base: '/entando-de-app/cmsresources/ent-prj-tmpl-vue-bundle/',
     build: {
         outDir: 'build',
+        assetsDir: 'static/assets',
         rollupOptions: {
             output: {
                 entryFileNames: "static/js/[name]-[hash].js",
